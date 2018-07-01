@@ -13,11 +13,10 @@ public class Message extends AbstractDomainEntity {
     @Column(name = "payload", nullable = false, updatable = false)
     private String payload;
 
-    public Message(String payload, MessageType messageType) {
+    protected Message(String payload, MessageType messageType) {
         this.payload = payload;
         this.type = messageType;
     }
-
 
     public MessageType getType() {
         return type;

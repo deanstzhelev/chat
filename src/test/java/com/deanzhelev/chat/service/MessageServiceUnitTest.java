@@ -1,7 +1,7 @@
 package com.deanzhelev.chat.service;
 
 import com.deanzhelev.chat.dto.MessageDTO;
-import com.deanzhelev.chat.factory.MessageFactory;
+import com.deanzhelev.chat.model.MessageFactory;
 import com.deanzhelev.chat.model.Message;
 import com.deanzhelev.chat.model.MessageType;
 import com.deanzhelev.chat.repository.MessageRepository;

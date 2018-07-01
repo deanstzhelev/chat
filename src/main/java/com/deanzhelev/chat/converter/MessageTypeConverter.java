@@ -7,10 +7,6 @@ public class MessageTypeConverter implements Converter<String, MessageType> {
 
     @Override
     public MessageType convert(String source) {
-        try {
-            return MessageType.fromString(source);
-        } catch (Exception e) {
-            return null;
-        }
+        return MessageType.fromString(source);
     }
 }

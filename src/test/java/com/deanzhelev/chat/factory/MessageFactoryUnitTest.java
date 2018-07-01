@@ -2,6 +2,7 @@ package com.deanzhelev.chat.factory;
 
 import com.deanzhelev.chat.dto.MessageDTO;
 import com.deanzhelev.chat.model.Message;
+import com.deanzhelev.chat.model.MessageFactory;
 import com.deanzhelev.chat.model.MessageType;
 import org.junit.Before;
 import org.junit.Test;

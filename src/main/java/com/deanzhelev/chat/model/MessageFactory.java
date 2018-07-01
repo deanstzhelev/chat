@@ -1,4 +1,4 @@
-package com.deanzhelev.chat.factory;
+package com.deanzhelev.chat.model;
 
 import com.deanzhelev.chat.dto.MessageDTO;
 import com.deanzhelev.chat.model.Message;

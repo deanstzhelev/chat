@@ -1,7 +1,7 @@
 package com.deanzhelev.chat.service;
 
 import com.deanzhelev.chat.dto.MessageDTO;
-import com.deanzhelev.chat.factory.MessageFactory;
+import com.deanzhelev.chat.model.MessageFactory;
 import com.deanzhelev.chat.model.Message;
 import com.deanzhelev.chat.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +23,7 @@ public class DefaultMessageService implements MessageService {
 
     @Override
     public Message sendMessage(MessageDTO messageDTO) {
-        return messageRepository.save(messageFactory.createMessage(messageDTO));
+        Message message = messageRepository.save(messageFactory.createMessage(messageDTO));
+        return message;
     }
 }
