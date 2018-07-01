@@ -35,7 +35,7 @@ public class MessageServiceUnitTest {
     public void setUp() {
         messageService = new DefaultMessageService(messageRepository, messageFactory);
         when(messageDTO.getPayload()).thenReturn("simple text");
-        when(messageDTO.getType()).thenReturn(MessageType.TEXT);
+        when(messageDTO.getType()).thenReturn(MessageType.SEND_TEXT);
         when(messageFactory.createMessage(messageDTO)).thenReturn(message);
     }
 

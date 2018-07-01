@@ -27,7 +27,7 @@ public class MessageFactoryUnitTest {
     @Test
     public void testCreateTextMessage() {
         when(messageDTO.getPayload()).thenReturn("Simple text");
-        when(messageDTO.getType()).thenReturn(MessageType.TEXT);
+        when(messageDTO.getType()).thenReturn(MessageType.SEND_TEXT);
 
         Message message = messageFactory.createMessage(messageDTO);
 
@@ -37,7 +37,7 @@ public class MessageFactoryUnitTest {
     @Test
     public void testCreateEmoteMessage() {
         when(messageDTO.getPayload()).thenReturn(":D");
-        when(messageDTO.getType()).thenReturn(MessageType.EMOTE);
+        when(messageDTO.getType()).thenReturn(MessageType.SEND_EMOTE);
 
         Message message = messageFactory.createMessage(messageDTO);
 

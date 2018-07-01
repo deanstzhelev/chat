@@ -23,7 +23,6 @@ public class DefaultMessageService implements MessageService {
 
     @Override
     public Message sendMessage(MessageDTO messageDTO) {
-        Message message = messageRepository.save(messageFactory.createMessage(messageDTO));
-        return message;
+        return messageRepository.save(messageFactory.createMessage(messageDTO));
     }
 }
